@@ -150,7 +150,7 @@ text-align: center;
     margin-left: 5px;
 }
 /* media queries */
-/* player section media queries */
+/* player section media queries for phone */
  @media only screen and (max-width: 688px) {
     .container {
       width: 100%;
@@ -167,3 +167,13 @@ text-align: center;
     } 
   } 
  
+/* player section media queries for tablet */
+@media only screen and (min-width:688px) and (max-width: 992px) {
+    .container{
+        width: 100%;
+    }
+    .players,.courses{
+        grid-template-columns: repeat(2, 1fr);
+        text-align: center;
+    }
+}
